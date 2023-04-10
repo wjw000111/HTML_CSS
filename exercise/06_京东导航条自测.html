@@ -1,0 +1,137 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="../CSS/reset.css">
+    <link rel="stylesheet" href="../06_font&background/fa/css/all.css">
+    <style>
+        .clearfix::after,
+        .clearfix::before{
+            content: '';
+            display: table;
+            clear: both;
+        }
+        .top-bar-wrapper{
+            border: 1px solid #ddd;
+            background-color: rgb(227, 228, 229);
+            font-size: 14px;
+            height: 30px;
+            line-height: 1.5;
+        }
+        .top-bar{
+            width: 1190px;
+            margin: 0 auto;
+            line-height: 30px;
+            position: relative;
+        }
+        .top-bar a,
+        .top-bar span,
+        .top-bar i{
+            text-decoration: none;
+            color: #999;
+        }
+        .top-bar a:hover,
+        .top-bar .height-light{
+            color: red;
+        }
+        .location{
+            float: left;
+        }
+        .location .fas{
+            color: red;
+        }
+        .location .current-city{
+            border: 1px solid transparent;
+            padding: 0 10px;
+            position: relative;
+            z-index: 9999;
+        }
+        .location .city-list{
+            display: none;
+            width: 320px;
+            height: 436px;
+            background-color: white;
+            border: 1px solid rgb(204, 204, 204);
+            box-shadow: 0 2px 2px rgba(0, 0, 0, 0.2);
+            position: absolute;
+            top: 31px;
+            z-index: 999;
+        }
+        .location:hover .city-list{
+            display: block;
+        }
+        .location:hover .current-city{
+            background-color: white;
+            border: 1px solid rgb(204, 204, 204);
+            border-bottom: none;
+            padding-bottom: 1px;
+        }
+        .shortcut{
+            float: right;
+        }
+        .shortcut li{
+            float: left;
+        }
+        .shortcut .line{
+            width: 1px;
+            height: 10px;
+            background-color: #999;
+            margin: 12px 10px 0;
+        }
+    </style>
+</head>
+<body>
+    <div class="top-bar-wrapper">
+        <div class="top-bar clearfix">
+            <div class="location">
+                <div class="current-city">
+                    <i class="fas fa-map-marker-alt"></i>
+                    <a href="">四川</a>
+                </div>
+                <div class="city-list"></div>
+            </div>
+            <ul class="shortcut clearfix">
+                <li>
+                    <a href="javascript:;">您好，请登录</a>
+                    <a class="height-light" href="javascript:;">免费注册</a>
+                </li>
+                <li class="line"></li>
+                <li>
+                    <a href="">我的订单</a>
+                </li>
+                <li class="line"></li>
+                <li>
+                    <a href="">我的京东</a>
+                    <i class="fas fa-angle-down"></i>
+                </li>
+                <li class="line"></li>
+                <li>
+                    <a class="height-light" href="">企业采购</a>
+                    <i class="fas fa-angle-down"></i>
+                </li>
+                <li class="line"></li>
+                <li>
+                    <a href="">商家服务</a>
+                    <i class="fas fa-angle-down"></i>
+                </li>
+                <li class="line"></li>
+                <li>
+                    <span>网站导航</span>
+                    <i class="fas fa-angle-down"></i>
+                </li>
+                <li class="line"></li>
+                <li>
+                    <span>手机京东</span>
+                </li>
+                <li class="line"></li>
+                <li>
+                    <span>网站无障碍</span>
+                </li>
+            </ul>
+        </div>
+    </div>
+</body>
+</html>

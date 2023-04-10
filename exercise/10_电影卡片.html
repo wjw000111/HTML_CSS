@@ -1,0 +1,86 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="../CSS/reset.css">
+    <link rel="stylesheet" href="../06_font&background/fa/css/all.css">
+    <style>
+        .outer{
+            width: 251px;
+            margin: 100px auto;
+            box-shadow: 0 0 10px rgba(0, 0, 0, .3);
+        }
+        .img-wrapper img{
+            width: 100%;
+            /* 消除图片样式自带的边界 */
+            vertical-align: bottom;
+        }
+        .info{
+            padding: 0 18px;
+            color: #acaaaa;
+            font-size: 14px;
+        }
+        .info .title{
+            font-size: 18px;
+            color: #717171;
+            margin: 13px 0 15px 0;
+        }
+        .info .category i{
+            margin-right: 7px;
+            margin-left: 4px;
+        }
+        .info .intro{
+            margin: 18px 4px;
+            line-height: 20px;
+        }
+        .star-wrapper{
+            height: 46px;
+            border-top: 1px solid #e9e9e9;
+            line-height: 46px;
+            color: #ddd;
+            padding: 0 16px;
+        }
+        .star{
+            float: left;
+        }
+        .star .light{
+            color: #b9cb41;
+        }
+        .star-wrapper .weibo{
+            float: right;
+        }
+    </style>
+</head>
+<body>
+    <div class="outer">
+        <div class="img-wrapper">
+            <img src="./img/10/1.jpg" alt="">
+        </div>
+        <div class="info">
+            <h2 class="title">
+                动画电影
+            </h2>
+            <h3 class="category">
+                <i class=" fas fa-map-marker-alt"></i>
+                动画
+            </h3>
+            <p class="intro">这是一步迪士尼的动画电影，非常的好看呀！</p>
+        </div>
+        <div class="star-wrapper">
+            <ul class="star">
+                <li class="fas fa-star light"></li>
+                <li class="fas fa-star light"></li>
+                <li class="fas fa-star"></li>
+                <li class="fas fa-star"></li>
+            </ul>
+            <div class="weibo">
+                <span class="fab fa-weibo"></span>
+            </div>
+            
+        </div>
+    </div>
+</body>
+</html>

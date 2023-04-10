@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <form action="target.html" autocomplete="on">
+        <!-- 
+            readonly将表单项设置为只读，但是数据会被提交
+            通过autocomplete=“off”取消自动补全功能
+            disabled将表单项设置为禁用,数据不会被提交
+            autofocus 设置表单项自动获取焦点
+         -->
+        <input type="text" name="username" value="默认输入" readonly>
+        <br>
+        <input type="text" name="a" autocomplete="off" autofocus>
+        <br>
+        <input type="text" name="b" disabled>
+        <br>
+        <!-- 兼容性不是太好,IE不支持 -->
+        <input type="color">
+        <br>
+        <!-- email会自动检查格式,但在IE中显示效果不同，所以不常用 -->
+        <input type="email">
+        <br>
+        <input type="submit">
+        <input type="reset">
+        <input type="button" value="按钮">
+        <br>
+        <button type="submit">提交</button>
+        <button type="reset">重置</button>
+        <button type="button">按钮</button>
+    </form>
+</body>
+</html>

@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <!-- 
+        auto 标签用来向页面中引入一个外部的音频文件
+        音频文件引入时，默认情况下不允许用户自己控制播放停止
+
+        属性：
+            controls 是否允许用户控制播放
+            autoplay 音频文件是否自动播放
+                -如果设置了autoplay 则音乐在打开页面时会自动播放，但目前大部分浏览器都不会自动对音乐进行播放
+            loop 音乐是否循环播放
+     -->
+    <!-- <audio src="./source/121554648.mp3" controls autoplay loop></audio> -->
+
+    <!-- 除了通过src来指定外部文件的路径外，还可以通过source来指定文件路径,多个source优先用第一个，第一个不支持就用第二个，都不支持时显示文字 -->
+    <audio controls>
+        <!-- 对不起,您的浏览器不支持播放音视频,请升级浏览器! -->
+        <source src="./source/121554648.mp3">
+        <source src="./source/1522889560.mp3">
+        <!-- 让老版本浏览器也能播放 -->
+        <embed src="./source/121554648.mp3" type="audio/mp3" width="200" height="100">
+    </audio>
+
+    <video controls>
+        <source src="./source/林驰-物联网无线供电技术研究与探索.webm">
+        <source src="./source/林驰-物联网无线供电技术研究与探索.mp4">
+        <embed src="./source/林驰-物联网无线供电技术研究与探索.mp4" type="video/mp4">
+    </video>
+
+    <video controls>
+        <!-- 引入外部视频，通常不这么做 -->
+        <source src="//player.bilibili.com/player.html"> </iframe>">
+    </video>
+    
+</body>
+</html>

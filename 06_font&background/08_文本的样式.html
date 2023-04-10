@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        .box1{
+            font-size: 50px;
+            font-family: 微软雅黑;
+            /*
+                text-decoration设置文本修饰
+                    可选值：
+                        none 什么都没有
+                        underline 下划线
+                        overline 上划线
+                    还可以设置线的颜色和类型，但是ie浏览器不支持 
+             */
+            text-decoration: overline red dotted;
+
+        }
+        .box2{
+            /* 文本溢出处理，溢出的文本显示... */
+            /*
+                white-space 设置网页如何处理空白
+                    可选值：
+                        normal 正常
+                        nowrap 不换行
+                        pre 保留空白 
+             */
+            width: 200px;
+            white-space: nowrap;
+            overflow: hidden;
+            text-overflow: ellipsis;
+        }
+    </style>
+</head>
+<body>
+    <div class="box1">今天天气真不错</div>
+    <div class="box2">Lorem ipsum, dolor sit amet consectetur adipisicing elit. Animi officiis blanditiis eligendi similique, minima, sint reprehenderit suscipit voluptates rem ab dolor a impedit doloremque odit fugit error quam aliquam amet.</div>
+</body>
+</html>

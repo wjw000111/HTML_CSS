@@ -1,0 +1,92 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="../CSS/reset.css">
+    <style>
+        a{
+            text-decoration: none;
+        }
+        .wrapper{
+            width: 300px;
+            height: 358px;
+            margin: 50px auto;
+            /* background-color: #bfa; */
+            border-top: 1px #ddd solid;
+        }
+        .news-title{
+            height: 30px;
+            display: inline-block;
+            border-top: 1px red solid;
+            margin-top: -1px;
+            padding-top: 10px;
+        }
+        .news-title a{
+            color: #40406B;
+            /* 设置文字加粗 */
+            font-weight: bold;
+        }
+        .news-img{
+            height: 150px;
+        }
+        .news-img img{
+            width: 100%;
+            height: 150px;
+        } 
+        .news-img .img-title{
+            margin-top: -30px;
+            font-weight: bold;
+            color: #fff;
+            padding-left: 30px;
+        }
+        .news-list{
+            margin-top: 20px;
+            /* padding-left: 20px; */
+        }
+        .news-list li{
+            margin-bottom: 17px;
+        }
+        .news-list li::before{
+            content: '■';
+            color: rgb(221, 215, 215);
+            font-size: 12px;
+            margin-right: 4px;
+        }
+        .news-list li a{
+            font-size: 14px;
+            color: #666;
+        }
+        .news-list li a:hover{
+            color: red;
+        }
+    </style>
+</head>
+<body>
+    <div class="wrapper">
+        <h2 class="news-title">
+            <a href="#">体育</a>
+        </h2>
+        <div class="news-img">
+            <img src="../img/u=2195581283,824507147&fm=253&fmt=auto&app=120&f=JPEG.webp" alt="">
+            <h3 class="img-title">大卫の露西酱</h3>
+        </div>
+        <ul class="news-list">
+            <li>
+                <a href="#">乔治：我爱LA 喜欢和LBJ一起打球</a>
+            </li>
+            <li>
+                <a href="#">格林：三年前降薪就登KD 特制T需嘲讽</a>
+            </li>
+            <li>
+                <a href="#">take4000双鞋子让保罗季度</a>
+            </li>
+            <li>
+                <a href="#">CBA下赛季：常规赛四组循环，飞行艇</a>
+            </li>
+        </ul>
+    </div>
+</body>
+</html>

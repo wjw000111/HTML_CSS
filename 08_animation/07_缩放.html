@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        .box1{
+            width: 100px ;
+            height: 100px;
+            background-color: #bfa;
+            margin: 100px auto;
+            transition: 2s;
+            border: 1px red solid;
+            /* 变形的原点 默认值 center */
+            transform-origin: 50px 50px;
+        }
+        .box1:hover{
+            /*
+                对元素进行缩放的函数：
+                    scaleX()
+                    scaleY() 
+                    scale() 双方向缩放
+                    scaleZ() Z轴方向缩放，但即使开perspective也看不出来,需要旋转
+             */
+            transform: scale(2);
+        }
+        .img-wrapper{
+            width: 200px;
+            height: 200px;
+            border: 1px red solid;
+            overflow: hidden;
+        }
+        .img-wrapper:hover img{
+            transform: scale(1.2);
+        }
+        img{
+            width: 100%;
+            height: 100%;
+            transition: .2s;
+        }
+    </style>
+</head>
+<body>
+    <div class="box1"></div>
+    <div class="img-wrapper">
+        <img src="../img/135219_53942290225.jpg" alt="">
+    </div>
+</body>
+</html>

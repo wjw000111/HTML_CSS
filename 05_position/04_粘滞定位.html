@@ -1,0 +1,72 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="../CSS/reset.css">
+    <style>
+        body{
+            height: 3000px;
+        }
+        .nav{
+            height: 48px;
+            width: 1210px;
+            margin:50px auto;
+            background-color: rgb(232, 231, 227);
+            /*
+                粘滞定位
+                    -当元素的position属性设置为sticky时则开启了元素的粘滞定位
+                    -粘滞定位和相对定位的特点基本一致，不同的是粘滞定位可以在元素到达某个位置时将其固定 
+             */
+            position: sticky;
+            top: 10px;
+        }
+        .nav li{
+            float: left;
+            line-height: 48px;
+        }
+        .nav a{
+            display: block;
+            color: #777777;
+            text-decoration: none;
+            font-size: 18px;
+            padding: 0 38px;
+        }
+        .nav a:hover{
+            background-color: gray;
+            color: #fff;
+        }
+        .nav li:last-child a{
+            padding: 0 42px 0 43px;
+        }
+    </style>
+</head>
+<body>
+    <ul class="nav">
+        <li>
+            <a href="#">HTML/CSS</a>
+        </li>
+        <li>
+            <a href="#">Borowser Side</a>
+        </li>
+        <li>
+            <a href="#">Server Side</a>
+        </li>
+        <li>
+            <a href="#">Programming</a>
+        </li>
+        <li>
+            <a href="#">XML</a>
+        </li>
+        <li>
+            <a href="#">Web Building</a>
+        </li>
+        <li>
+            <a href="#">Reference</a>
+        </li>
+        
+    </ul>
+</body>
+</html>

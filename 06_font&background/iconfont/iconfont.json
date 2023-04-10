@@ -1,0 +1,44 @@
+{
+  "id": "3899773",
+  "name": "guigu",
+  "font_family": "iconfont",
+  "css_prefix_text": "icon-",
+  "description": "",
+  "glyphs": [
+    {
+      "icon_id": "33997773",
+      "name": "影音区",
+      "font_class": "yingyinqu",
+      "unicode": "e624",
+      "unicode_decimal": 58916
+    },
+    {
+      "icon_id": "33997774",
+      "name": "餐桌",
+      "font_class": "canzhuo",
+      "unicode": "e625",
+      "unicode_decimal": 58917
+    },
+    {
+      "icon_id": "33997775",
+      "name": "抽油烟机",
+      "font_class": "chouyouyanji",
+      "unicode": "e626",
+      "unicode_decimal": 58918
+    },
+    {
+      "icon_id": "33997776",
+      "name": "空调",
+      "font_class": "kongtiao",
+      "unicode": "e627",
+      "unicode_decimal": 58919
+    },
+    {
+      "icon_id": "33997777",
+      "name": "桌球区",
+      "font_class": "zhuoqiuqu",
+      "unicode": "e628",
+      "unicode_decimal": 58920
+    }
+  ]
+}

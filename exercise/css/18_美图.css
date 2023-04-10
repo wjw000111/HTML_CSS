@@ -1,0 +1,125 @@
+a {
+  text-decoration: none;
+  color: #fff;
+}
+a:hover {
+  color: #c5c4c4;
+}
+.top-bar-wrapper {
+  background-color: #000;
+}
+.top-bar {
+  max-width: 1200px;
+  margin: 0 auto;
+  height: 48px;
+  padding: 0 14px;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  background-color: #000;
+}
+.top-bar .left-menu .menu-icon {
+  width: 18px;
+  height: 48px;
+  position: relative;
+}
+.top-bar .left-menu .menu-icon li {
+  width: 18px;
+  height: 1px;
+  background-color: #fff;
+  position: absolute;
+  transform-origin: left center;
+  transition: 0.5s;
+}
+.top-bar .left-menu .menu-icon li:nth-child(1) {
+  top: 18px;
+}
+.top-bar .left-menu .menu-icon li:nth-child(2) {
+  top: 24px;
+}
+.top-bar .left-menu .menu-icon li:last-child {
+  top: 30px;
+}
+.top-bar .left-menu .menu-icon:active li:nth-child(1) {
+  transform: rotateZ(40deg);
+}
+.top-bar .left-menu .menu-icon:active li:nth-child(2) {
+  opacity: 0;
+}
+.top-bar .left-menu .menu-icon:active li:last-child {
+  transform: rotateZ(-40deg);
+}
+.top-bar .left-menu:active .nav {
+  display: block;
+}
+.top-bar .left-menu .nav {
+  display: none;
+  position: absolute;
+  top: 48px;
+  left: 0;
+  right: 0;
+  bottom: 0 ;
+  background-color: #000;
+  padding-top: 60px;
+}
+.top-bar .left-menu .nav li {
+  width: 80%;
+  margin: 0 auto;
+  border-bottom: 1px solid #4e4e4e;
+}
+.top-bar .left-menu .nav li a {
+  display: block;
+  line-height: 44px;
+  font-size: 14px;
+}
+.top-bar .left-menu .nav li:last-child a {
+  display: inline-block;
+  margin-right: 6px;
+}
+.top-bar .left-menu .nav li span {
+  font-size: 14px;
+  color: #fff;
+}
+.top-bar .logo a {
+  text-indent: -9999px;
+  display: block;
+  width: 122px;
+  height: 32px;
+  background-image: url('../img/美图logo.png');
+  background-repeat: no-repeat;
+  background-size: contain;
+}
+@media only screen {
+}
+@media only screen and (min-width: 768px) {
+  .left-menu {
+    flex: auto;
+    order: 2;
+  }
+  .left-menu .nav {
+    display: flex !important;
+    position: static !important;
+    padding: 0 !important;
+    justify-content: space-around !important;
+  }
+  .left-menu .nav li {
+    width: auto !important;
+    border-bottom: none !important;
+    margin: 0 !important;
+  }
+  .left-menu .nav li a {
+    line-height: 48px !important;
+  }
+  .left-menu .nav li span {
+    display: none;
+  }
+  .left-menu .menu-icon {
+    display: none;
+  }
+  .logo {
+    order: 1;
+  }
+  .user-info {
+    order: 3;
+  }
+}

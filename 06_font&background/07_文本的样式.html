@@ -1,0 +1,57 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        div{
+            width: 800px;
+            border: 1px red solid;
+            /*
+                text-align文本的水平对齐
+                    可选值：
+                        left 左侧对齐
+                        right 右侧对齐
+                        center 居中对齐
+                        justify 两端对齐 
+             */
+             text-align: justify;
+             font-size: 50px;
+        }
+        span{
+            font-size: 20px;
+            border: 1px black solid;
+            /*
+                vertical-align设置元素垂直对齐的方式
+                可选值：
+                    baseline 默认值，基线对齐
+                    top 顶部对齐
+                    bottom 底部对齐
+                    middle 居中对齐 
+
+             */
+             vertical-align: top;
+        }
+        p{
+            border: 1px red solid;
+        }
+        img{
+            /* 由于有基线，导致图片底部和外部元素底部没对齐,使用top ,middle,bottom都能取消基线对齐方式 */
+            vertical-align: top;
+        }
+    </style>
+</head>
+<body>
+    <div>
+        今天天气真不错呀Helloyx <span>真不错 hello</span>
+    </div>
+    <!-- <div>
+        Lorem, ipsum dolor sit amet consectetur adipisicing elit. Veniam, velit expedita iusto neque placeat nam debitis repudiandae reprehenderit consequatur cupiditate corrupti error doloremque labore temporibus officia eaque dolores accusantium officiis.
+    </div> -->
+    <p>
+        <img src="../img/135219_53942290225.jpg" alt="">
+    </p>
+</body>
+</html>

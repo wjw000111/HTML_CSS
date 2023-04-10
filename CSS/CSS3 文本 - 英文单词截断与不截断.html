@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+    <style type="text/css">
+        body{
+            font-size: 12px;
+        }
+        p, h3{
+            font-family: "Microsoft YaHei UI", tahoma, Hiragino Sans GB, sans-serif;
+            font-weight: bold;
+        }
+        .box{
+            width: 200px;
+            height: 50px;
+            border: 1px solid red;
+        }
+        .box1  {
+            overflow-wrap: break-word;
+        }
+        .box2{
+            word-break: break-all;
+        }
+        .box3{
+            word-break: keep-all;
+        }
+        .box4{
+            white-space: nowrap;
+        }
+    </style>
+</head>
+    <body>
+        <h3>提示：通过浏览器调整.box宽度，查看效果</h3>
+        <p> overflow-wrap: break-word; 浏览器自行决定在何处“截断”单词<br></p>
+        <div class="box box1"> Hello World Hello,World Hooooooooooole</div>
+        <p> word-break: break-all; 强行截断单词！<br></p>
+        <div class="box box2"> Hello World Hello,World Hooooooooooole</div>
+        <p> word-break: keep-all; 不准许“截断” 单词！！<br></p>
+        <div class="box box3"> Hello World Hello,World Hooooooooooole</div>
+        <p> white-space: nowrap; 永不换行，直到遇到<br></p>
+        <div class="box box4"> Hello World Hello,World Hooooooooooole</div>
+    </body>
+</html>
